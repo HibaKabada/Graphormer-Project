@@ -65,7 +65,7 @@ def all_pairs_shortest_paths(graph: nx.Graph) -> Tuple[Dict, Dict]:
             - node_paths: Dictionnaire des chemins entre tous les nœuds
             - edge_paths: Dictionnaire des arêtes empruntées
     """
-    # On calcule les chemins pour chaque nœud comme source
+    #On calcule les chemins pour chaque nœud comme source
     paths = {n: compute_shortest_paths(graph, n) for n in graph}
     # On sépare les chemins de nœuds et d'arêtes
     node_paths = {n: paths[n][0] for n in paths}
