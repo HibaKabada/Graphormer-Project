@@ -46,7 +46,7 @@ def train_model(config, logger, train_loader, num_node_features, num_edge_featur
 
     # Les outils pour l'optimisation
     optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate)  # Un optimiseur moderne
-    criterion = nn.L1Loss(reduction="sum")  # Notre fonction de perte
+    criterion = nn.L1Loss(reduction="sum")  #Notre fonction de perte
 
     logger.log('Lancement de l\'entraînement...')
     # La grande boucle sur toutes les époques
