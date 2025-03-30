@@ -15,7 +15,7 @@ def get_config():
     parser.add_argument('--seed', type=int, default=42,
                        help='Random seed for reproducibility')
 
-    # ------------------- Configuration matérielle -------------------
+    # ------------------- Configuration matérielle ------------------
     #--gpu_index: Sélection du GPU à utiliser (-1 pour CPU)
     parser.add_argument('--gpu_index', type=int, default=0,
                        help='GPU index (use -1 for CPU)')
