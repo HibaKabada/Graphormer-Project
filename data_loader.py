@@ -16,7 +16,7 @@ def load_esol_dataset(config):
         num_node_features: Nombre de features par nœud
         num_edge_features: Nombre de features par arête
     """
-   # On s'assure que le dossier Data/MoleculeNet existe (sinon on le crée)
+   #On s'assure que le dossier Data/MoleculeNet existe (sinon on le crée)
     os.makedirs('Data/MoleculeNet', exist_ok=True)
 
     # Chargement du dataset ESOL - c'est des molécules avec leurs propriétés solubilité
