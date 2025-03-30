@@ -110,7 +110,7 @@ class EdgeEncoding(nn.Module):
                     edge_features[path_indices]
                 ).mean()  # Moyenne le long du chemin
 
-        return torch.nan_to_num(edge_encoding_matrix)  # Évite les NaN
+        return torch.nan_to_num(edge_encoding_matrix)  # Éviter les NaN
 
     def _weighted_edge_sum(self, embeddings: torch.Tensor, edge_features: torch.Tensor) -> torch.Tensor:
         """Combine linéairement les embeddings et les caractéristiques des arêtes."""
